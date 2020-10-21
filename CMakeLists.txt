@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 2.8.3)
 project(pyrosmsg)
 
 set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
-
+set(pybind11_DIR "/usr/local/share/cmake/pybind11")
+set(PYTHON_INCLUDE_DIR "/usr/include/python2.7")
 find_package(catkin REQUIRED COMPONENTS
   cmake_modules
   geometry_msgs
